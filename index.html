@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/smk8vby.css">
     </head>
-    <body>
-        <h1>
-            INDEX-A COLLECTION OF WORKS
-        </h1>
-        <h2>Exercises</h2>
-        <a href="">Exercise 1</a>
-        <a href="">Exercise 2</a>
-        <a href="">Exercise 3</a>
-        <a href="">Exercise 4</a>
-        <a href="">Exercise 5</a>
-        <h2>Readings</h2>
-        <a href="">Reading 1</a>
-        <a href="">Reading 2</a>
-        <a href="">Reading 3</a>
-        <a href="">Reading 4</a>
-        <a href="">Reading 5</a>
-        <h2>Assignments</h2>
-        <a href="">WEB TYPOGRAPHY</a>
-        <a href="">INTERACTIVE ELEMENTS</a>
-        
 
+    <!-- An index page linking to everything
+    Reading responses
+    ACT I: CSS Typeface, ACT I: Web Typographic Poster, ACT II: Abstract Interactive Site (as working html pages)
+    All exercises
+    A page of links to resources you used throughout the semester (libraries, stackoverflow, readings, peers’ work, site inspiration, etc.)
+    Any other content you feel represents your growth as a web-based artist/designer this semester
+     
+    
+    The index page must be include elements of things that you’ll be learning in this course: 
+    
+    Responsive Design ok
+    Custom Fonts ok
+    Animation
+    Interactivity -->
+
+    <body onload="init()">
+        <canvas id="canvas" width="0" height="0" style="position:fixed;top:0%;left:0%;border: black 2px solid;"></canvas>
+        <div style="position:fixed;bottom:10px;left:10px;">Choose Color</div>
+        <div style="position:fixed;bottom:10%;left:10%;width:20px;height:20px;background:#fe938cff;" id="pink" onclick="color(this)"></div>
+        <div style="position:fixed;bottom:10%;left:11%;width:20px;height:20px;background:#e6b89cff;" id="tumbleweed" onclick="color(this)"></div>
+        <div style="position:fixed;bottom:10%;left:12%;width:20px;height:20px;background:#ead2acff;" id="wheat" onclick="color(this)"></div>
+        <div style="position:fixed;bottom:12%;left:10%;width:20px;height:20px;background:#9cafb7ff;" id="pewter" onclick="color(this)"></div>
+        <div style="position:fixed;bottom:12%;left:11%;width:20px;height:20px;background:#4281a4ff;" id="celadon" onclick="color(this)"></div>
+        <div style="position:fixed;bottom:12%;left:12%;width:20px;height:20px;background:rgb(42, 90, 115);" id="dark-celadon" onclick="color(this)"></div>
+        <img id="canvasimg" style="position:absolute;top:10%;left:52%;" style="display:none;">
+        <script src="index.js"></script>
+
+        <h1>Index: <br>A collection of works</h1>
+            <div class="content">
+                <!-- Exercises -->
+                <div class="column1">
+                    <h2>Exercise</h2>
+                        <a href="exercise1.html">Exercise 1</a><br>
+                        <a href="https://vickytranr.github.io/flags/">Exercise 2</a><br>
+                        <a href="https://vickytranr.github.io/css-fonts-and-animations/ ">Exercise 3</a><br>
+                        <a href="error.html">Exercise 4</a><br>
+                        <a href="exercise5.html">Exercise 5</a><br>
+                        <a href="error.html">Exercise 6</a>
+                </div>
+                <!-- Readings -->
+                <div class="column2">
+                    <h2>Readings</h2>
+                        <a href="reading1.html">Reading 1</a><br>
+                        <a href="reading2.html">Reading 2</a><br>
+                        <a href="reading3.html">Reading 3</a><br>
+                        <a href="reading4.html">Reading 4</a><br>
+                        <a href="reading5.html">Reading 5</a><br>
+                        <a href="#"></a>
+                </div>
+                <!-- Assignments -->
+                <div class="column3">
+                    <h2>Assignments</h2>
+                        <a href="https://vickytranr.github.io/css-typeface/">CSS TYPEFACE</a><br>
+                        <a href="https://vickytranr.github.io/web-typographic-poster/">WEB TYPOGRAPHIC POSTER</a><br>
+                        <a href="https://vickytranr.github.io/interactive-elements/">INTERACTIVE ELEMENTS</a><br>
+                        <a href="#"></a><br>
+                        <a href="#"></a><br>
+                        <a href="#"></a>
+                </div>
+                <!-- Inspiration -->
+                <div class="column4">
+                    <h2>Inspiration/Resources</h2>
+                        <a href="https://www.w3schools.com/howto/howto_css_equal_height.asp">How to create columns</a><br>
+                        <a href="https://www.w3schools.com/html/html_responsive.asp">HTML Responsive Web Design</a><br>
+                        <a href="https://stackoverflow.com/questions/4037212/html-canvas-full-screen">Full screen HTML canvas</a><br>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes">Drawing shapes with canvas</a><br>
+                        <a href="http://www.fallingfalling.com/">Falling Falling</a><br>
+                        <a href="https://cake23.de/turing-fluid.html">Turing Fluid</a><br>
+                        <a href="https://stackoverflow.com/questions/7143806/make-an-image-follow-mouse-pointer">Image follow cursor</a><br>
+                        <a href="https://coolors.co/fe938c-e6b89c-ead2ac-9cafb7-4281a4">Colour palette generator</a>
+                </div>
+            </div>
     </body>
 </html>

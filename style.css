@@ -1,0 +1,93 @@
+/* CSS HEX */
+/* --congo-pink: #fe938cff;
+--tumbleweed: #e6b89cff;
+--wheat: #ead2acff;
+--pewter-blue: #9cafb7ff;
+--celadon-blue: #4281a4ff; */
+
+html {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(42, 90, 115);
+}
+
+body {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(42, 90, 115);
+}
+
+h1 {
+    font-family: los-feliz,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:180px;
+    width:1200px;
+    color: #ead2acff;
+    text-align: center;
+    padding-top:150px;
+    padding-bottom: 150px;
+    margin:auto;
+    user-select: none;
+    z-index:2;
+   /* -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none; */
+
+}
+
+h2 {
+    font-family: los-feliz,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color:#ead2acff;
+    padding-left: 40px;
+}
+
+a {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color:rgb(176, 197, 206);
+    text-decoration: none;
+    padding:40px;
+}
+a:hover {
+    color: #fe938cff;
+}
+.column1 {
+    display:inline-block;
+    padding:20px;
+  }
+.column2 {
+    display:inline-block;
+    padding:20px;
+  }
+  .column3 {
+    display:inline-block;
+    padding:20px;
+  }
+  .column4 {
+    display:inline-block;
+    padding:20px;
+  }
+
+  content {
+    padding-left:90px;
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+    .column1, .column2, .column3, .column4 {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  .canvas{
+      z-index: -1;
+  }
