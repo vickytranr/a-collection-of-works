@@ -18,7 +18,6 @@ body {
     margin: 0;
     /* overflow: hidden; */
     padding: 0;
-    background-color: rgb(42, 90, 115);
 }
 
 h1 {
@@ -26,11 +25,12 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size:180px;
+    line-height: 175px;
     width:1200px;
     color: #ead2acff;
     text-align: center;
-    padding-top:150px;
-    padding-bottom:150px;
+    /* padding-top:70px; */
+    padding-bottom:100px;
     margin:auto;
     user-select: none;
 
@@ -70,10 +70,11 @@ h2 {
     font-style: normal;
     font-size: 45px;
     color:#ead2acff;
-    padding-left: 40px;
+    padding-left: 50px;
+    padding-top: 120px;
 }
 h2:hover {
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-name: flicker;
     animation-timing-function:linear;
     animation-iteration-count: infinite; 
@@ -94,31 +95,31 @@ a {
     font-size: 25px;
     color:rgb(176, 197, 206);
     text-decoration: none;
-    padding-left:40px;
+    padding-left:50px;
 }
 a:hover {
-    color: #fe938cff;
+  color: #fe938cff;
 }
 .column1 {
     display:inline-block;
-    padding:20px;
+    /* padding:20px; */
   }
 .column2 {
     display:inline-block;
-    padding:20px;
+    /* padding:20px; */
   }
   .column3 {
     display:inline-block;
-    padding:20px;
+    /* padding:20px; */
   }
   .column4 {
     display:inline-block;
-    padding:20px;
+    /* padding:20px; */
   }
 
   content {
-    padding-left:90px;
-    padding-bottom:90px;
+    padding-left:100px;
+    background-color: transparent;
 }
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 800px) {
@@ -128,4 +129,27 @@ a:hover {
   }
   .canvas{
       z-index: -1;
+  }
+
+  .parallax {
+    background-image: url("DRAW.png");
+    min-height: 1000px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .sky {
+      object-fit: cover;
+      height:300px;
+      width:100%;
+      object-position: top; 
+      user-select: none;
+  }
+  .dog {
+    object-fit: cover;
+    height:300px;
+    width:100%;
+    object-position: bottom; 
+    user-select: none;
   }

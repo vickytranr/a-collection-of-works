@@ -8,7 +8,7 @@ currY = 0,
 dot_flag = false;
  
 var x = "rgb(42, 90, 115)",
-y = 10;
+y = 5;
  
 function init() {
 canvas = document.getElementById('canvas');
@@ -54,8 +54,8 @@ switch (obj.id) {
        x = "rgb(42, 90, 115)";
        break;
 }
-if (x == "white") y = 10;
-else y = 10;
+if (x == "white") y = 5;
+else y = 5;
  
 }
  
