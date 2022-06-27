@@ -16,8 +16,8 @@ body {
     width:  100%;
     height: 100%;
     margin: 0;
+    /* overflow: hidden; */
     padding: 0;
-    overflow: hidden;
     background-color: rgb(42, 90, 115);
 }
 
@@ -30,15 +30,38 @@ h1 {
     color: #ead2acff;
     text-align: center;
     padding-top:150px;
-    padding-bottom: 150px;
+    padding-bottom:150px;
     margin:auto;
     user-select: none;
+
+    animation: slide 4s, color-change 3s infinite;
+
     z-index:2;
    /* -webkit-user-select: none;
    -khtml-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none; */
 
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        margin-left: -100%;
+    }
+  
+    to {
+        opacity: 1;
+        margin-left: 14.3%;
+    }
+  }
+@keyframes color-change {
+    5% {color:#ead2acff; }
+    20% {color: #fe938cff;}
+    40% {color: #ead2acff; }
+    60% {color: #fe938cff;}
+    80% {color: #ead2acff; }
+    90% {color: #fe938cff;}
 }
 
 h2 {
@@ -49,6 +72,20 @@ h2 {
     color:#ead2acff;
     padding-left: 40px;
 }
+h2:hover {
+    animation-duration: 1s;
+    animation-name: flicker;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite; 
+}
+@keyframes flicker {
+    5% {color:#ead2acff; }
+    20% {color: #fe938cff;}
+    40% {color: #ead2acff; }
+    60% {color: #fe938cff;}
+    80% {color: #ead2acff; }
+    90% {color: #fe938cff;}
+  }
 
 a {
     font-family: forma-djr-micro, sans-serif;
@@ -57,7 +94,7 @@ a {
     font-size: 25px;
     color:rgb(176, 197, 206);
     text-decoration: none;
-    padding:40px;
+    padding-left:40px;
 }
 a:hover {
     color: #fe938cff;
@@ -81,6 +118,7 @@ a:hover {
 
   content {
     padding-left:90px;
+    padding-bottom:90px;
 }
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 800px) {
