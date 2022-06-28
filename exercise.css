@@ -1,0 +1,106 @@
+html {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(42, 90, 115);
+}
+
+body {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+    padding: 0;
+}
+h2 {
+    font-family: los-feliz,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color:#ead2acff;
+    text-align: center;
+}
+h2:hover {
+    animation-duration: 3s;
+    animation-name: flicker;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite; 
+}
+@keyframes flicker {
+    5% {color:#ead2acff; }
+    20% {color: #fe938cff;}
+    40% {color: #ead2acff; }
+    60% {color: #fe938cff;}
+    80% {color: #ead2acff; }
+    90% {color: #fe938cff;}
+  }
+
+  img{
+      width:600px;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      border: #ead2acff 5px solid;
+  }
+.sky {
+    object-fit: cover !important;
+    height:300px !important;
+    width:100% !important;
+    object-position: top !important; 
+    user-select: none !important;
+    margin-left:0px !important;
+    border:none;
+}
+.dog {
+    object-fit: cover !important;
+    height:270px !important;
+    width:100% !important;
+    object-position: bottom !important; 
+    user-select: none !important;
+    position:relative !important;
+    bottom:0px !important;
+    margin-left:0px !important;
+    border:none;
+  }
+  .nyt {
+      width:1200px !important;
+  }
+  .home {
+    font-family: los-feliz,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:24px;
+    margin-top:15px !important;
+    position:absolute;
+    padding:5px;
+    text-decoration: none;
+    border:rgb(176, 197, 206) solid 5px;
+  }
+  .home:hover {
+    border:#fe938cff solid 5px !important; 
+  }
+  .home:visited {
+    font-family: los-feliz,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:24px;
+    margin-top:15px !important;
+    position:absolute;
+    padding:5px;
+    color:rgb(176, 197, 206);
+    text-decoration: none;
+    border:rgb(176, 197, 206) solid 5px;
+  }
+  a {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    color:rgb(176, 197, 206);
+    text-decoration: none;
+    margin-top:50px;
+    margin-left:100px;
+}
+a:hover {
+    color: #fe938cff !important;
+}

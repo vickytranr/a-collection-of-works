@@ -77,3 +77,16 @@ p {
     position:relative;
     bottom:0px;
   }
+  .home {
+    font-family: los-feliz,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:24px;
+    margin-top:15px !important;
+    position:absolute;
+    padding:5px;
+    border:rgb(176, 197, 206) solid 5px;
+  }
+  .home:hover {
+    border:#fe938cff solid 5px; 
+  }
