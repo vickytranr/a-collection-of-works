@@ -141,6 +141,7 @@ a:hover {
       width:100%;
       object-position: top; 
       user-select: none;
+      width:100%
   }
   .dog {
     object-fit: cover;
@@ -148,4 +149,5 @@ a:hover {
     width:100%;
     object-position: bottom; 
     user-select: none;
+    width:100%
   }
