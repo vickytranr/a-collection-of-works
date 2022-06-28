@@ -131,13 +131,9 @@ a:hover {
       z-index: -1;
   }
 
-  .parallax {
-    background-image: url("DRAW.png");
-    min-height: 1000px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  .pic {
+    object-fit: fill;
+    width:100%;
   }
   .sky {
       object-fit: cover;
